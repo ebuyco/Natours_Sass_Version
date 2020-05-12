@@ -1,1 +1,12 @@
-@import "./abstracts/test.scss";
+
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+@import "./base/base";
+@import "./base/animation";
+@import "./base/typography";
+
+@import '../sass/layout/navigation';
+@import '../sass/layout/header';
+
+

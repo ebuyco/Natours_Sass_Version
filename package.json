@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "next",
+    "start": "parcel components/index.html --out-dir build",
+    "build": "parcel build components/index.html --out-dir build --public-url ./",
     "dev": "parcel components/index.html -p 8181",
+    "watch": "parcel components/index.html -p 8182",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,20 +21,13 @@
   },
   "homepage": "https://github.com/ebuyco/Natours_Sass_Version.git#readme",
   "dependencies": {
-    "@material-ui/core": "^4.9.10",
-    "@material-ui/styles": "^4.9.13",
     "autoprefixer": "^9.7.6",
-    "axios": "^0.19.2",
-    "chart.js": "^2.9.3",
-    "classnames": "^2.2.6",
-    "next": "^9.3.0",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.12.4",
     "postcss-loader": "^3.0.0",
+    "posthtml-img-autosize": "^0.1.4",
     "react": "^16.13.0",
-    "react-chartjs-2": "^2.9.0",
-    "react-countup": "^4.3.3",
     "react-dom": "^16.13.0",
     "react-scripts": "^3.4.0",
     "sass": "^1.26.5",
@@ -76,6 +71,7 @@
     "defaults",
     "not IE 11",
     "not IE_Mob 11",
-    "maintained node versions"
+    "maintained node versions",
+    "last 1 chrome version"
   ]
 }
