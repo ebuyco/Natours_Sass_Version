@@ -6,7 +6,8 @@
   "scripts": {
     "start": "parcel components/index.html --out-dir build",
     "build": "parcel build components/index.html --out-dir build --public-url ./",
-    "dev": "parcel components/index.html -p 8181",
+    "cleanup": "rm -rf .cache dist",
+    "dev": "npm run cleanup && parcel components/index.html -p 8181",
     "watch": "parcel components/index.html -p 8182",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/ebuyco/Natours_Sass_Version.git#readme",
   "dependencies": {
     "autoprefixer": "^9.7.6",
+    "file-loader": "^6.0.0",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.12.4",
@@ -33,7 +35,8 @@
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "url-loader": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
@@ -52,6 +55,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "nodemon": "^2.0.2",
+    "parcel-plugin-static-files-copy": "^2.3.1",
     "prettier": "^1.19.1",
     "stylelint": "^13.2.1",
     "stylelint-config-recommended": "^3.0.0",
@@ -66,6 +70,10 @@
     "plugins": [
       "@babel/plugin-proposal-class-properties"
     ]
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
   },
   "browserslist": [
     "defaults",

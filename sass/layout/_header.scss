@@ -2,8 +2,9 @@
         height: 85vh;
         background-image: linear-gradient(to right bottom,
         rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
-        url(../../../public/img/hero-small.jpg);
+        rgba($color-primary-dark, 0.8));
+        // url(./images/hero-small.jpg);
+
         background-size:cover;
         background: top;
         position: relative;
@@ -19,8 +20,9 @@
       only screen and (min-width: 125em ) {
                 background-image: linear-gradient(to right bottom,
                 rgba($color-primary-light, 0.8),
-                rgba($color-primary-dark, 0.8)),
-                url(../../../public/img/hero.jpg);
+                rgba($color-primary-dark, 0.8));
+                // url(./images/hero.jpg);
+
       }
 
       @include respond(phone){
