@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel components/index.html --out-dir build",
+    "prettier": "prettier --write components/index.html",
+    "prettier:sass": "prettier --write sass/**.scss",
     "build": "parcel build components/index.html --out-dir build --public-url ./",
     "cleanup": "rm -rf .cache dist",
     "dev": "npm run cleanup && parcel components/index.html -p 8181",
