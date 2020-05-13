@@ -1,4 +1,39 @@
-   html {
+// Font face
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url("^/../../public/montserrat/Montserrat-Regular.ttf") format('truetype');
+  font-weight:normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MontserratSemiBold';
+  src: url("^/../../public/montserrat/Montserrat-SemiBold.ttf") format('truetype');
+  font-weight:normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url("^/../../public/roboto/Roboto-Bold.ttf") format('truetype');
+  font-weight:normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("^/../../public/roboto/Roboto-Light.ttf") format('truetype');
+  font-weight:normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'RobotoRegular';
+src: url("^/../../public/roboto/Roboto-Regular.ttf");
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+  html {
         font-size: 62.5%;
 
 
@@ -50,6 +85,8 @@
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     font-family: 'Roboto-regular';
+    padding: 3rem;
+    font-family: 'MontserratRegular';
     background-size: cover;
       @include respond(tab-port) {
         padding: 0;
