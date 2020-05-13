@@ -1,9 +1,5 @@
 module.exports = {
-  plugins: [
-    require('autoprefixer'),
-    require('postcss-import'),
-    require('postcss-preset-env'),
-  ],
+  plugins: ['autoprefixer', 'postcss-import', 'postcss-preset-env'],
 };
 // module.exports = {
 //     'postcss-import': {},

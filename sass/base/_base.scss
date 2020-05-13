@@ -84,9 +84,8 @@ font-style: normal;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    font-family: 'Roboto-regular';
+    font-family: 'RobotoRegular';
     padding: 3rem;
-    font-family: 'MontserratRegular';
     background-size: cover;
       @include respond(tab-port) {
         padding: 0;

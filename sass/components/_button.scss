@@ -1,0 +1,26 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 1.5rem 4rem;
+          border-radius: 10rem;
+          transition: all .2s;
+          position: relative;
+          font-size: $default-font-size;
+          border: none;
+          cursor:pointer;
+
+    }
+
+    &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+            &::after {
+                    transform: scaleX(1.4) scaleY(1.6);
+                    opacity: 0;
+            }
+    }
+}
