@@ -43,7 +43,7 @@
 
     &__img {
           height: 100%;
-          transform: translateX(-4rem) scale(1.4);
+          transform: translateX(1rem) scale(1.4);
           backface-visibility: hidden;
           transition: all .5s;
     }
@@ -76,7 +76,7 @@
     }
 
     &:hover &__img{
-                transform: translateX(-4rem) scale(1);
+                transform: translateX(0.1rem) scale(1);
                 filter: blur(3px) brightness(80%);
     }
 }
