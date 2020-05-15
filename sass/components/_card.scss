@@ -16,7 +16,7 @@
           backface-visibility: hidden;
           border-radius: 3px;
           overflow: hidden;
-          box-shadow: 0 1.5rem rem rgba($color-black, .15);
+          box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
           &--front {
                 background-color: $color-white;
@@ -57,17 +57,17 @@
 
            &--1 {
                   background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
-                  url("^/../../public/images/nat-5.jpg");
+                  url(^/../../public/images/nat-5.jpg);
                 }
 
           &--2 {
               background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-              url("^/../../public/images/nat-6.jpg");
+              url(^/../../public/images/nat-6.jpg);
           }
 
           &--3 {
               background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
-              url("^/../../public/images/nat-7.jpg");
+              url(^/../../public/images/nat-7.jpg);
           }
       }
 
